@@ -23,3 +23,27 @@ typeof("23")
 
 # How many miles are there in 10 kilometers
 10 / 1.61
+
+# To get pi, to \pi then TAB to autocomplete
+π
+
+x = 5
+3x
+
+parse(Int64, "32")
+parse(Float64, "3.32")
+string(45)
+sin(45)
+log10(123)
+
+degrees = 45
+x = sin(degrees / 360 * 2 * π)
+x = exp(log(x+1))
+
+sqrt(5)
+
+function voidfunc()
+    println("printing is a liar")
+end
+
+print(typeof(voidfunc()))
