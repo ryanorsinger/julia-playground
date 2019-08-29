@@ -1,31 +1,27 @@
-On one level, you will be learning to program, a useful skill by itself. On another level, you will use programming as a means to an end. As we go along, that end will become clearer.
+### Language Features
+- multi-paradigm (procedural, functiona, object-oriented)
+- multiple dispatch (method overloading)
 
----
+### REPL Modes
+- From julia repl, do `?` to enter help mode.
+- From julia repl, do `]` to enter the package manager mode
+- From julia repl, do `;`, to enter shell mode
+- See https://docs.julialang.org/en/v1/stdlib/REPL/index.html for more modes
 
 
-What Is a Program?
+### Prompt Pasting Feature
+Julia features "prompt pasting". Try it out. Copy and paste the following block into the Julia repl. It will run! Super neat!
 
-A program is a sequence of instructions that specifies how to perform a computation. The computation might be something mathematical, such as solving a system of equations or finding the roots of a polynomial, but it can also be a symbolic computation, such as searching for and replacing text in a document, or something graphical, like processing an image or playing a video.
+```
+julia> using Dates 
+ 
+julia> Dates.now() 
+2018-09-02T21:13:03.122 
+julia> ans 
+2018-09-02T21:13:03.122 
+```
 
-The details look different in different languages, but a few basic instructions appear in just about every language:
-
-Input
-
-    Get data from the keyboard, a file, the network, or some other device.
-Output
-
-    Display data on the screen, save it in a file, send it over the network, etc.
-Math
-
-    Perform basic mathematical operations like addition and multiplication.
-Conditional execution
-
-    Check for certain conditions and run the appropriate code.
-Repetition
-
-    Perform some action repeatedly, usually with some variation.
-
-Believe it or not, that’s pretty much all there is to it. Every program you’ve ever used, no matter how complicated, is made up of instructions that look pretty much like these. So you can think of programming as the process of breaking a large, complex task into smaller and smaller subtasks until the subtasks are simple enough to be performed with one of these basic instructions.
-
----
-natural language vs formal language is spoken word vs. 
+### Tab completion
+`pri` followed by tab will show functions that start with `pri`
+`\pi` followed by tab will generate `π`
+`\` followed by tab shows all of the special character options
